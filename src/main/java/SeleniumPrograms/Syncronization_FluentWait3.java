@@ -27,7 +27,7 @@ public class Syncronization_FluentWait3 {
         
 		driver.get("https://www.hyrtutorials.com/p/waits-demo.html");
 		driver.findElement(By.id("btn2")).click();
-		System.out.println("Button1 is clicked");
+		System.out.println("Button2 is clicked");
 
 		//driver.findElement(By.id("txt1")).sendKeys("text enter");
 		
@@ -42,7 +42,7 @@ public class Syncronization_FluentWait3 {
        .pollingEvery(Duration.ofSeconds(5))
        .ignoring(NoSuchElementException.class);
 
-       WebElement txt2 = wait.until(new Function<WebDriver, WebElement>() {
+       WebElement txt = wait.until(new Function<WebDriver, WebElement>() {
        public WebElement apply(WebDriver driver) {
          return driver.findElement(By.id("txt2"));
        }
