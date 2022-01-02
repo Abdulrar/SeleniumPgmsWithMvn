@@ -91,9 +91,7 @@ public class DiffDropdowns {
 		
 	}
 	
-	
-	
-	
+		
 	System.out.println("---------------");
 	System.out.println("First selected option for IDEName_dd : "+IDEName_dd.getFirstSelectedOption().getText());
 	

@@ -23,9 +23,9 @@ public class Frames {
 		/*
 		 * Frame is the Html component which can be used to embed one web page into another web page 
 		 * 
-		 *  e.x; we have web app having multiple web pages if we want to display one page into another web page
+		 * e.x; we have web app having multiple web pages if we want to display one page into another web page
 		 * 
-		 * >> Or it is a container were developers are trying to combine diff types of elements to gather as per req   
+		 * Or it is a container were developers are trying to combine diff types of elements to gather as per req   
 		 */
 
 		WebDriverManager.chromedriver().setup();
@@ -36,7 +36,7 @@ public class Frames {
 		
         List<WebElement> totalFrames = driver.findElements(By.tagName("iframe"));
         System.out.println("----> "+totalFrames.size());
-       
+        //driver.findElement(By.tagName("iframe"));
         
         //1st execute 
        // driver.findElement(By.id("name")).sendKeys("Frames Automation");

@@ -37,7 +37,7 @@ public class Syncronization_ImplicitAndExplicitWaits2 {
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a/h3")));
-        
+  
         //  ----------------------> Please practise other functions 
         
         

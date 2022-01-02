@@ -32,12 +32,9 @@ public class MultipleWindowHandling2 {
 		}
 		
 		
-		
-		
-		
-		
 		Object[] windowId = handles.toArray();  
-		//Convering Set to Array of type Object, Since the id is stored in Array we can access the windows randomly w.r.to the reference id(Index)
+		//Convering Set to Array of type Object, Since the id is stored in Array we can access the windows 
+		//randomly w.r.to the reference id(Index)
 		
 		
 		driver.switchTo().window((String) windowId[2]);
