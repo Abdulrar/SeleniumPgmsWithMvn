@@ -1,4 +1,4 @@
-package seleniumPrgms;
+package SeleniumPrograms;
 
 import java.util.Set;
 

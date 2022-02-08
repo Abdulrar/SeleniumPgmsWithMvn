@@ -70,6 +70,7 @@ for(int i = 0; i<tableHeaders.size(); i++) {
 if(allHeaderNmaes.contains("Contact")) {
 		
 		status = true;
+		//headernmaes.click(); for click on the required element
 		break;
 	}
 }
@@ -104,6 +105,7 @@ for (WebElement allTableData : allData) {
 	if(allTableCellData.contains("Ola")) {
 		
 		datastatus = true;
+		//allTableData.click(); for clcik on required element
 		break;
 	}
 	

@@ -1,4 +1,4 @@
-package seleniumPrgms;
+package SeleniumPrograms;
 
 import java.util.Set;
 
@@ -37,16 +37,23 @@ public class MultipleWindowHandling2 {
 		//randomly w.r.to the reference id(Index)
 		
 		
+		
 		driver.switchTo().window((String) windowId[2]);
 	    //driver.manage().window().maximize();
 		Thread.sleep(2000);
 		
+driver.switchTo().defaultContent();
+		
+		driver.close();
+		
 		driver.switchTo().window((String) windowId[1]);
 		Thread.sleep(2000);
 		
+		driver.close();
+		
 		driver.switchTo().window((String) windowId[0]);
 	    
-	    
+		
 	    
        for (Object windowIds : windowId) {
 			

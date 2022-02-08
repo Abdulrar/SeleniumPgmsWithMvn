@@ -1,4 +1,4 @@
-package seleniumPrgms;
+package SeleniumPrograms;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;

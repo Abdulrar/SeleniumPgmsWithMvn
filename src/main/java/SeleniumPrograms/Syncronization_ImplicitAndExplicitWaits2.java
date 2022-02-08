@@ -38,11 +38,20 @@ public class Syncronization_ImplicitAndExplicitWaits2 {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a/h3")));
   
+        
         //  ----------------------> Please practise other functions 
         
         
         System.out.println(firstResult.getText( ));
 		
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a/h3")));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//a/h3")));
+        wait.until(ExpectedConditions.textToBePresentInElementValue(By.xpath("//a/h3"), "text"));
+        //wait.until(ExpectedConditions.attributeContains(By.xpath("//a/h3"), id, "class"))); 
+        
+        
+        
+        
 	}
 
 }

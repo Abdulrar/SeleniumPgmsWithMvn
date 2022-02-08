@@ -1,5 +1,7 @@
 package pagination;
 
+import org.openqa.selenium.By;
+
 public class pagination {
 
 	public static void main(String[] args) {
@@ -46,6 +48,9 @@ if(!str == true){
 List<String> Allnames = new ArrayList<String>()
 String strAttribute = WebUI.getAttribute(findTestObject('Object Repository/AdminOrgListPage/NextPageBtn'), 'class')
 System.out.println("------> ---------- "+strAttribute)
+        //in selenium:
+        String typeValueTwo=driver.findElement(By.id("search_form_input_homepage")).getAttribute("type");
+		System.out.println("Value of type attribute: "+typeValueTwo);
 
 while(!strAttribute.contains("disabled")){
 	
