@@ -28,6 +28,10 @@ public class Frames2 {
 		 * >> Or it is a container were developers are trying to combine diff types of elements to gather as per req   
 		 */
 
+		
+//defaultContent() and driver. switchTo(). parentFrame() is that the first method switches the control to the main web page 
+//regardless of the number of frames within the web page
+		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
